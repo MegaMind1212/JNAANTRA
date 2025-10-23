@@ -1,0 +1,26 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* prevent ios devices from auto-zooming into fields when entering focus */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1024px) {
+    select:not(.ignore-ios-zoom),
+    textarea:not(.ignore-ios-zoom),
+    input:not(.ignore-ios-zoom),
+    .select__control:not(.ignore-ios-zoom) {
+        font-size: 16px !important;
+    }
+}
